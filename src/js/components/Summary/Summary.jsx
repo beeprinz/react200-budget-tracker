@@ -10,10 +10,6 @@ function formatCurrency(amount) {
     const cents = Math.floor((amount - dollars) * 100).toString().padEnd(2, '0');
     return `$${dollars.toLocaleString()}.${cents}`;
   }
-
-//   const dollars = Math.ceil(amount);
-//   const cents = Math.floor((amount - dollars) * 100 * -1).toString().padEnd(2, '0');
-//   return `-$${(dollars * -1).toLocaleString()}.${cents}`;
 }
 
 class Summary extends React.Component {
